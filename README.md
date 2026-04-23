@@ -24,3 +24,7 @@ When to use each
   mkdocs build -	production output
   mkdocs gh-deploy -	GitHub Pages deployment
   mkdocs new . -	initial project setup
+
+Documentation:
+  https://Luminary-Vee.github.io/openserve-platform-secrets/
+
