@@ -1,0 +1,96 @@
+site_name: Openserve Platform Security & Secrets Portal
+site_description: >
+  Enterprise documentation portal for Azure Key Vault, secrets management,
+  security architecture, governance, and operational runbooks.
+site_author: Openserve Platform Engineering
+
+# ----------------------------
+# THEME CONFIGURATION
+# ----------------------------
+theme:
+  name: material
+  language: en
+
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - content.code.copy
+    - content.tabs.link
+    - content.code.annotate
+    - search.highlight
+    - search.suggest
+    - toc.follow
+    - header.autohide
+
+  palette:
+    - scheme: default
+      primary: green
+      accent: teal
+
+    - scheme: slate
+      primary: green
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to dark mode
+
+# ----------------------------
+# PLUGINS
+# ----------------------------
+plugins:
+  - search
+
+# ----------------------------
+# MARKDOWN EXTENSIONS
+# ----------------------------
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+
+# ----------------------------
+# EXTRA UI SETTINGS
+# ----------------------------
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/openserve
+
+  generator: false
+
+# ----------------------------
+# NAVIGATION (ENTERPRISE STRUCTURE)
+# ----------------------------
+nav:
+  - Home: index.md
+
+  - Architecture:
+      - Key Vault Overview: architecture/key-vault.md
+
+  - Governance:
+      - Security Governance: security/governance.md
+
+  - POC:
+      - Key Vault Integration POC: poc/key-vault-poc.md
+
+  - Runbooks:
+      - Key Vault Migration: runbook/key-vault-migration.md
+
+  - Checklists:
+      - Deployment Checklist: checklist/deployment-checklist.md
+
+  - Troubleshooting:
+      - Key Vault Troubleshooting: troubleshooting/troubleshooting.md
